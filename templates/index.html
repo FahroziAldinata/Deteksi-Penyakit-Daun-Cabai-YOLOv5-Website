@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Deteksi Penyakit Daun Cabai  </title>
+
+        <!-- CSS FILES -->        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+        
+        <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="/static/css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="/static/css/templatemo-festava-live.css" rel="stylesheet">
+        
+
+    </head>
+    
+    <body>
+
+        <main>
+
+            <header class="site-header">
+                <div class="container">
+                    <div class="row">
+                        
+                        <div class="col-lg-12 col-12 d-flex flex-wrap">
+                            <p class="d-flex me-4 mb-0">
+                                <i class="bi-person custom-icon me-2"></i>
+                                <strong class="text-dark">Halo !</strong>
+                            </p>
+                        </div>  
+
+                    </div>
+                </div>
+            </header>
+
+
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="..\templates\index.html">
+                        JST
+                    </a>
+
+                    <a href="../templates/Deteksi.html" class="btn custom-btn d-lg-none ms-auto me-4">Mulai</a>
+    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav align-items-lg-center ms-auto me-lg-5">
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_1">Home</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_2">About</a>
+                            
+                            </li><li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_3">Cara</a>
+                            </li>
+
+                        </li><li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_4">Anggota</a>
+                        </li>
+
+                        </ul>
+
+                        <a href="{{ url_for('deteksi') }}" class="btn custom-btn d-lg-block d-none">Mulai</a>
+                    </div>
+                </div>
+            </nav>
+            
+
+            <section class="hero-section" id="section_1">
+                <div class="section-overlay"></div>
+
+                <div class="container d-flex justify-content-center align-items-center">
+                    <div class="row">
+
+                        <div class="col-12 mt-auto mb-5 text-center">
+
+                            <h1 class="text-white mb-5">Deteksi Penyakit Daun Cabai</h1>
+
+                            <a href="{{ url_for('deteksi') }}" class="btn custom-btn smoothscroll" >Mulai Deteksi</a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            
+                
+                    
+            </section>
+
+
+            <section class="about-section section-padding" id="section_2">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-12 mb-4 mb-lg-0 d-flex align-items-center">
+                            <div class="services-info">
+                                <h2 class="text-white mb-4">CNN</h2>
+
+                                <p class="text-white">Convolutional Neural Network (CNN) adalah arsitektur deep learning yang dirancang khusus untuk memproses data berbentuk grid, seperti citra. CNN terdiri dari beberapa lapisan utama yaitu: convolutional layer (ekstraksi fitur), pooling layer (reduksi dimensi), dan fully connected layer (klasifikasi).</p>
+
+                                <h6 class="text-white mt-4">Yolo</h6>
+
+                                <p class="text-white">YOLO (You Only Look Once) merupakan pengembangan dari CNN yang digunakan untuk deteksi objek secara real-time. YOLOv8, versi terbaru, menawarkan efisiensi lebih tinggi dan akurasi yang ditingkatkan, dengan pendekatan one-stage detection yang langsung memprediksi bounding box dan label kelas dalam satu proses.</p>
+
+                                <h6 class="text-white mt-4">Deteksi Penyaki Daun cabai</h6>
+
+                                <p class="text-white">Website ini dibuat untuk mebantu menganalisis dan mendeteksi penyakit apa yang terjangkit pada pohon cabai sehingga mempercepat petani atau ahli mengambil keputusan untuk perawatan.</p>
+
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                            <div class="about-text-wrap">
+                                <img src="{{ url_for('static', filename='images/cnn.jpg') }}" class="about-image img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="bg-section-4 section-padding" id="section_3">
+                <div class="container">
+                    <div class="row justify-content-center">
+            
+                        <div class="col-12 text-center">
+                            <h2 class="text-white mb-4">Cara Penggunaanya</h2>
+                        </div>
+            
+                        <div class="col-lg-5 col-12">
+                            <div class="text-white p-4 shadow rounded">
+                                <ol class="fs-5">
+                                    <li>Tekan <strong>Mulai</strong></li>
+                                    <li>Input gambar atau folder berisi gambar</li>
+                                    <li>Tekan tombol <strong>"Deteksi"</strong></li>
+                                    <li>Hasil deteksi akan muncul di layar</li>
+                                </ol>
+                            </div>
+                        </div>
+            
+                    </div>
+                </div>
+            </section>
+            
+
+
+            <section class="schedule-section section-padding" id="section_4">
+                <div class="container">
+                    <div class="row justify-content-center">
+            
+                        <div class="col-12 text-center text-white">
+                            <h2 class="text-white mb-4">Kelompok 7 JST</h2>
+                        </div>
+            
+                        <div class="col-lg-5 col-12">
+                            <div class="text-white p-4 shadow rounded">
+                                <ul class="list-unstyled fs-5 mb-0">
+                                    <li>1. Fahrozi Aldinata</li>
+                                    <li>2. Cindy Aisyah Putri</li>
+                                    <li>3. Trisma Muliani</li>
+                                    <li>4. Akmal Ardiansyah</li>
+                                </ul>
+                            </div>
+                        </div>
+            
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+
+
+        <footer class="site-footer">
+            <div class="site-footer-top">
+                <div class="container">
+                    <div class="row">
+
+
+            <div class="site-footer-bottom">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-3 col-12 mt-5">
+                            <p class="copyright-text">Copyright © 2025 Deteksi Penyakit Daun Cabai</p>
+                        </div>
+
+                        <div class="col-lg-8 col-12 mt-lg-5">
+                            <ul class="site-footer-links">
+                                <li class="site-footer-link-item">
+                                    <a href="#" class="site-footer-link">Terms &amp; Conditions</a>
+                                </li>
+
+                                <li class="site-footer-link-item">
+                                    <a href="#" class="site-footer-link">Privacy Policy</a>
+                                </li>
+
+                                <li class="site-footer-link-item">
+                                    <a href="#" class="site-footer-link">Your Feedback</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+<!--
+
+T e m p l a t e M o
+
+-->
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/click-scroll.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/jquery.sticky.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+       
+    </body>
+</html>
