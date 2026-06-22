@@ -71,6 +71,7 @@ main {
 }
 
 
+
 /*---------------------------------------
   TYPOGRAPHY               
 -----------------------------------------*/
@@ -569,6 +570,11 @@ strong {
 
 .site-footer-bottom {
   border-top: 1px solid #1f1c1c;
+  margin-top: 0;
+}
+
+.section-padding ~ footer .site-footer-bottom,
+.schedule-section ~ footer .site-footer-bottom {
   margin-top: 60px;
 }
 

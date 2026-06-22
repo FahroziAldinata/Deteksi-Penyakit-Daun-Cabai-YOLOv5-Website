@@ -1,1 +1,73 @@
 desktop.ini 
+# ============================================================
+# Python
+# ============================================================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ============================================================
+# Virtual environment
+# ============================================================
+venv/
+.venv/
+env/
+.env/
+ENV/
+
+# ============================================================
+# Environment variables & secrets
+# JANGAN pernah commit file ini ke GitHub
+# ============================================================
+.env
+.env.*
+*.secret
+
+# ============================================================
+# Model (file besar, tidak perlu ikut di repo)
+# Upload best.pt terpisah (misal Google Drive / HuggingFace Hub)
+# dan dokumentasikan cara download-nya di README.
+# ============================================================
+*.pt
+*.onnx
+*.engine
+*.torchscript
+
+# ============================================================
+# Dataset (biasanya sangat besar, simpan terpisah)
+# ============================================================
+dataset/
+
+# ============================================================
+# Folder upload dari user — berisi gambar yang diupload
+# saat runtime, tidak relevan untuk di-commit
+# ============================================================
+static/uploads/
+
+# ============================================================
+# Folder hasil deteksi YOLO — generated saat runtime
+# ============================================================
+static/runs/
+runs/
+
+# ============================================================
+# IDE & OS
+# ============================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ============================================================
+# Log
+# ============================================================
+*.log
+logs/
