@@ -23,7 +23,7 @@ Pengguna dapat mengunggah satu gambar atau satu folder berisi banyak gambar daun
 | Komponen        | Teknologi                              |
 |------------------|------------------------------------------|
 | Backend          | Flask (Python)                          |
-| Model AI         | YOLOv8 — [Ultralytics](https://github.com/ultralytics/ultralytics) |
+| Model AI         | YOLOv5 — [Ultralytics](https://github.com/ultralytics/ultralytics) |
 | Frontend         | HTML, CSS, Bootstrap 5, Bootstrap Icons |
 | Template Desain  | TemplateMo 583 Festava Live             |
 | JavaScript       | jQuery, Bootstrap Bundle, Sticky JS     |
@@ -34,7 +34,7 @@ Pengguna dapat mengunggah satu gambar atau satu folder berisi banyak gambar daun
 
 ```
 ├── app.py                          # Entry point aplikasi Flask
-├── best.pt                         # Model YOLOv8 hasil training
+├── best.pt                         # Model YOLOv5 hasil training
 ├── requirements.txt                 # Daftar dependensi Python
 ├── dataset/
 │   └── test/labels/                 # Label ground truth untuk evaluasi akurasi
