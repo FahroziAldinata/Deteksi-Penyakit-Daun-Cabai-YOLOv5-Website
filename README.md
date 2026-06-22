@@ -1,6 +1,6 @@
 # 🌶️ Deteksi Penyakit Daun Cabai
 
-Aplikasi web untuk mendeteksi penyakit pada daun cabai secara otomatis menggunakan model **YOLOv8 (Ultralytics)**, dibangun dengan **Flask** untuk backend dan **Bootstrap 5** untuk tampilan antarmuka.
+Aplikasi web untuk mendeteksi penyakit pada daun cabai secara otomatis menggunakan model **YOLOv5 (Ultralytics)**, dibangun dengan **Flask** untuk backend dan **Bootstrap 5** untuk tampilan antarmuka.
 
 Pengguna dapat mengunggah satu gambar atau satu folder berisi banyak gambar daun cabai, lalu sistem akan memproses dan menampilkan hasil deteksi (bounding box, label, dan confidence score) secara langsung di halaman web, lengkap dengan opsi unduh hasil dalam format ZIP.
 
